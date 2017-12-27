@@ -14,6 +14,8 @@
 		86B21AF21FF307B900EB8772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B21AF01FF307B900EB8772 /* LaunchScreen.storyboard */; };
 		86B21AFD1FF307B900EB8772 /* AddOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B21AFC1FF307B900EB8772 /* AddOneTests.swift */; };
 		86B21B081FF307B900EB8772 /* AddOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B21B071FF307B900EB8772 /* AddOneUITests.swift */; };
+		86B21B171FF3089900EB8772 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B21B151FF3089900EB8772 /* MainViewController.swift */; };
+		86B21B181FF3089900EB8772 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B21B161FF3089900EB8772 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		86B21B031FF307B900EB8772 /* AddOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B21B071FF307B900EB8772 /* AddOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOneUITests.swift; sourceTree = "<group>"; };
 		86B21B091FF307B900EB8772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B21B151FF3089900EB8772 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		86B21B161FF3089900EB8772 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		86B21ADB1FF307B900EB8772 = {
 			isa = PBXGroup;
 			children = (
+				86B21B151FF3089900EB8772 /* MainViewController.swift */,
+				86B21B161FF3089900EB8772 /* MainViewController.xib */,
 				86B21AE61FF307B900EB8772 /* AddOne */,
 				86B21AFB1FF307B900EB8772 /* AddOneTests */,
 				86B21B061FF307B900EB8772 /* AddOneUITests */,
@@ -235,6 +241,7 @@
 				86B21AF21FF307B900EB8772 /* LaunchScreen.storyboard in Resources */,
 				86B21AEF1FF307B900EB8772 /* Assets.xcassets in Resources */,
 				86B21AED1FF307B900EB8772 /* Main.storyboard in Resources */,
+				86B21B181FF3089900EB8772 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B21B171FF3089900EB8772 /* MainViewController.swift in Sources */,
 				86B21AEA1FF307B900EB8772 /* ViewController.swift in Sources */,
 				86B21AE81FF307B900EB8772 /* AppDelegate.swift in Sources */,
 			);
@@ -433,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rjc.AddOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rjc.AddOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

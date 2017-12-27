@@ -12,10 +12,30 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var mainVC: MainViewController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        
+        // Initialize Main View Controller as "mainVC"
+        mainVC = MainViewController(nibName: "MainViewController", bundle:nil)
+        
+        // Variable that holds value of screen resolution
+        let frame = UIScreen.main.bounds
+        
+        // Initialize instance of the window variable declared on line 15. Uses value of frame to determine window size.
+        window = UIWindow(frame: frame)
+        
+        // Uses the ! symbol to unwrap the option window variable using mainVC since that will not be nil.
+        window!.rootViewController = mainVC
+        window!.makeKeyAndVisible()
+        
+        mainVC!.setNumber()
+        
+        
+        // Required at the end of the application function.
         return true
     }
 
